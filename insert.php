@@ -11,6 +11,8 @@ if($conn){
 
 $sql= "INSERT INTO atest(title,description,created) VALUES('MySQL','MySQL is...',NOW())";
 
+echo $sql;
+
 $result = mysqli_query($conn,$sql);
 //sql문 실행시킴
 if($result ===false){
